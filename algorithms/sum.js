@@ -12,15 +12,15 @@
 // };
 
 
-// var add = function (a, b) {
-//   if(b != undefined) return a + b;
-//     return function (c) {
-//         return a + c;
-//     };
-// };
+var add = function (a, b) {
+  if(b != undefined) return a + b;
+    return function (c) {
+        return a + c;
+    };
+};
 
 
-//
-// console.log(add(3, 2, 4));
-// console.log(add(3));
-// console.log(add(3)(4));
+
+console.log(add(3, 2, 4));
+console.log(add(3));
+console.log(add(3)(4));
