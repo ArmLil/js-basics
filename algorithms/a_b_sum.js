@@ -2,11 +2,13 @@
 
 function add() {
     //  capture scoped arguments, arrayify
-    var args = Array.prototype.slice.call(arguments);
+    //var args = Array.prototype.slice.call(arguments);
+    var args = [...arguments];
 
     return function() {
         //  capture scoped arguments, arrayify
-        var args2 = Array.prototype.slice.call(arguments);
+        //var args2 = Array.prototype.slice.call(arguments);
+        var args2 = [...arguments];
 
         //  base condition (empty parens)
         if(typeof args2[0] == 'undefined') {
